@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathish G | Full Stack Java Developer Portfolio</title>
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Sathish G - Full Stack Java Developer & Software Engineer. B.Sc. Information Technology graduate specializing in Java, Spring Boot, React, and MySQL.">
+    <meta name="keywords" content="Sathish G, Sathish, Java Developer, Spring Boot, Full Stack, Portfolio, Tap Academy, KPR College">
+    <meta name="author" content="Sathish G">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient background glows -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="nav-container container">
+            <a href="#" class="logo">
+                <span class="gradient-text">&lt;Sathish.Dev/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active-link">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#ats-demo" class="nav-link">ATS Simulator</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="hero-container container grid">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Sathish G</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I am a <span id="typing-text" class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="hero-description">
+                        Full Stack Java Developer in training and enthusiastic B.Sc. Information Technology graduate. Passionate about designing robust backend services in Spring Boot and crafting high-performance, dynamic frontend experiences.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    
+                    <div class="social-dock">
+                        <span class="social-dock-title">Connect with me:</span>
+                        <div class="social-links">
+                            <a href="https://github.com/sathish24111" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sathish-g-dev" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:sathishsath2714@gmail.com" class="social-link" aria-label="Email">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a href="tel:9360729692" class="social-link" aria-label="Phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="profile-card-wrapper">
+                        <div class="profile-card-glow"></div>
+                        <div class="profile-card">
+                            <div class="profile-img-container">
+                                <img src="https://kommodo.ai/i/N8zy9Vg1cSa3KthLQWv4" alt="Sathish G Portrait" class="profile-img">
+                            </div>
+                            <div class="profile-card-details">
+                                <span class="profile-name">Sathish G</span>
+                                <span class="profile-role">Full Stack Java Developer</span>
+                                <div class="profile-quick-stats">
+                                    <div class="quick-stat">
+                                        <span class="stat-number">250+</span>
+                                        <span class="stat-label">DSA Solved</span>
+                                    </div>
+                                    <div class="quick-stat">
+                                        <span class="stat-number">3+</span>
+                                        <span class="stat-label">Projects</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section section">
+            <div class="stats-container container grid">
+                <div class="stat-box reveal">
+                    <div class="stat-icon-wrapper">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Java Core & OOPs</h3>
+                        <p>Spring Boot, JDBC, Data Structures</p>
+                    </div>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="stat-icon-wrapper">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>250+ DSA Problems</h3>
+                        <p>Competitive Coding Platforms</p>
+                    </div>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="stat-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>ATS & Portal Projects</h3>
+                        <p>End-to-End Web Applications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-wrapper grid reveal">
+                    <!-- Programming Languages -->
+                    <div class="skills-category-card">
+                        <div class="category-icon-header">
+                            <i class="fa-solid fa-terminal"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 85%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 75%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">C</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 70%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend Technologies -->
+                    <div class="skills-category-card">
+                        <div class="category-icon-header">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 90%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 75%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 85%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">ES6+ JavaScript</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Backend Technologies -->
+                    <div class="skills-category-card">
+                        <div class="category-icon-header">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & Databases</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">Spring Boot</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 85%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MySQL & JDBC</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 70%;"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Core Concepts & Tools -->
+                    <div class="skills-category-card">
+                        <div class="category-icon-header">
+                            <i class="fa-solid fa-cubes"></i>
+                            <h3>Tools & Core</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li class="skill-item">
+                                <span class="skill-name">OOPs / DSA</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 85%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">GitHub / Git</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">VS Code / Eclipse</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 85%;"></span></span>
+                            </li>
+                            <li class="skill-item">
+                                <span class="skill-name">IntelliJ IDEA</span>
+                                <span class="skill-bar"><span class="skill-progress" style="width: 80%;"></span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="projects-grid grid reveal">
+                    <!-- Project 1: Smart Attendance Portal -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <!-- Custom SVG Project Mockup -->
+                            <svg class="project-svg-mockup" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="220" fill="url(#grad-attendance)" rx="10"/>
+                                <defs>
+                                    <linearGradient id="grad-attendance" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#1e1b4b" />
+                                        <stop offset="100%" stop-color="#311042" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Dashboard Mockup details -->
+                                <rect x="20" y="20" width="360" height="180" rx="6" fill="#0c0a21" opacity="0.9"/>
+                                <rect x="30" y="30" width="100" height="160" rx="4" fill="#1e1b4b" opacity="0.6"/>
+                                <circle cx="80" cy="60" r="20" fill="#a21caf" opacity="0.8"/>
+                                <rect x="45" y="95" width="70" height="8" rx="2" fill="#e2e8f0"/>
+                                <rect x="45" y="110" width="70" height="8" rx="2" fill="#e2e8f0"/>
+                                
+                                <rect x="145" y="30" width="225" height="40" rx="4" fill="#a21caf" opacity="0.2"/>
+                                <text x="160" y="55" font-family="Outfit, sans-serif" font-size="14" font-weight="bold" fill="#f43f5e">ATTENDANCE DASHBOARD</text>
+                                
+                                <rect x="145" y="80" width="105" height="110" rx="4" fill="#1e293b" opacity="0.6"/>
+                                <text x="155" y="105" font-family="Outfit, sans-serif" font-size="10" fill="#a7f3d0">GPS Location</text>
+                                <circle cx="197" cy="140" r="18" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="80 30"/>
+                                <text x="187" y="144" font-family="Outfit, sans-serif" font-size="10" font-weight="bold" fill="#10b981">OK</text>
+                                
+                                <rect x="265" y="80" width="105" height="110" rx="4" fill="#1e293b" opacity="0.6"/>
+                                <text x="275" y="105" font-family="Outfit, sans-serif" font-size="10" fill="#cbd5e1">Active Users</text>
+                                <rect x="275" y="125" width="85" height="12" rx="2" fill="#10b981" opacity="0.8"/>
+                                <rect x="275" y="145" width="85" height="12" rx="2" fill="#cbd5e1" opacity="0.2"/>
+                                <rect x="275" y="165" width="55" height="12" rx="2" fill="#cbd5e1" opacity="0.2"/>
+                            </svg>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>GPS API</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-date">Nov 2025 - Jan 2026</span>
+                            <h3>Smart Student Attendance Portal</h3>
+                            <p class="project-summary">A high-security, location-based attendance tracker using GPS verification to eliminate fraudulent logging.</p>
+                            <ul class="project-bullets">
+                                <li>Implemented GPS validation matching coordinates to verify student physical presence.</li>
+                                <li>Designed secure multi-role login authorization for students, faculty, and admins.</li>
+                                <li>Created custom dashboards showing analytics for attendance patterns.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Resume ATS Checker -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <!-- Custom SVG Project Mockup -->
+                            <svg class="project-svg-mockup" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="220" fill="url(#grad-ats)" rx="10"/>
+                                <defs>
+                                    <linearGradient id="grad-ats" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0f172a" />
+                                        <stop offset="100%" stop-color="#064e3b" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Screen Mockup -->
+                                <rect x="20" y="20" width="360" height="180" rx="6" fill="#022c22" opacity="0.8"/>
+                                
+                                <!-- File Upload Area -->
+                                <rect x="40" y="40" width="140" height="140" rx="4" fill="#065f46" opacity="0.3" stroke="#059669" stroke-width="2" stroke-dasharray="4 4"/>
+                                <path d="M110 85 L110 125 M95 105 L110 85 L125 105" stroke="#34d399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <text x="65" y="150" font-family="Outfit, sans-serif" font-size="11" fill="#34d399" font-weight="bold">DRAG & DROP RESUME</text>
+                                
+                                <!-- Score display -->
+                                <rect x="200" y="40" width="160" height="140" rx="4" fill="#042f2e" opacity="0.8"/>
+                                <text x="215" y="65" font-family="Outfit, sans-serif" font-size="11" fill="#93c5fd">ATS Match Score</text>
+                                <circle cx="280" cy="115" r="30" fill="none" stroke="#10b981" stroke-width="5" stroke-dasharray="140 48"/>
+                                <text x="264" y="121" font-family="Outfit, sans-serif" font-size="18" font-weight="bold" fill="#10b981">85%</text>
+                                
+                                <rect x="215" y="158" width="130" height="6" rx="3" fill="#34d399"/>
+                            </svg>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>PDF Parsing</span>
+                                <span>NLP Core</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-date">Feb 2026 - Apr 2026</span>
+                            <h3>AI Resume ATS Checker</h3>
+                            <p class="project-summary">An automated application tracking system (ATS) simulator providing real-time evaluation and resume scoring.</p>
+                            <ul class="project-bullets">
+                                <li>Engineered complex keyword matching algorithms comparing resume text to job descriptions.</li>
+                                <li>Developed clean backend parsing modules to extract raw data structure from PDF uploads.</li>
+                                <li>Optimized screening speed by 40% using fast text tokenizers and Java Collections.</li>
+                            </ul>
+                            <!-- Link directly to interactive tool -->
+                            <div class="project-action-link">
+                                <a href="#ats-demo" class="btn-text">Try Interactive Demo below <i class="fa-solid fa-angles-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Personal Portfolio Website -->
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <!-- Custom SVG Project Mockup -->
+                            <svg class="project-svg-mockup" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="220" fill="url(#grad-portfolio)" rx="10"/>
+                                <defs>
+                                    <linearGradient id="grad-portfolio" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0284c7" />
+                                        <stop offset="100%" stop-color="#0f172a" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Layout wireframe mockup -->
+                                <rect x="20" y="20" width="360" height="180" rx="6" fill="#0f172a" opacity="0.9"/>
+                                <rect x="20" y="20" width="360" height="25" fill="#1e293b"/>
+                                <circle cx="35" cy="32" r="4" fill="#ef4444"/>
+                                <circle cx="47" cy="32" r="4" fill="#eab308"/>
+                                <circle cx="59" cy="32" r="4" fill="#22c55e"/>
+                                
+                                <circle cx="80" cy="110" r="35" fill="url(#avatar-grad-1)" />
+                                <defs>
+                                    <linearGradient id="avatar-grad-1" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#0ea5e9"/>
+                                        <stop offset="100%" stop-color="#d946ef"/>
+                                    </linearGradient>
+                                </defs>
+                                
+                                <rect x="135" y="70" width="220" height="12" rx="3" fill="#e2e8f0" opacity="0.9"/>
+                                <rect x="135" y="90" width="160" height="8" rx="3" fill="#cbd5e1" opacity="0.4"/>
+                                <rect x="135" y="105" width="200" height="8" rx="3" fill="#cbd5e1" opacity="0.4"/>
+                                
+                                <rect x="135" y="135" width="60" height="20" rx="4" fill="#0ea5e9" opacity="0.8"/>
+                                <rect x="205" y="135" width="60" height="20" rx="4" fill="#e2e8f0" opacity="0.1"/>
+                            </svg>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <span class="project-date">2025</span>
+                            <h3>Personal Portfolio Website</h3>
+                            <p class="project-summary">A cutting-edge, lightweight web experience highlighting developer skillsets and personal coding journey.</p>
+                            <ul class="project-bullets">
+                                <li>Constructed using vanilla assets, achieving high optimization and rapid page load.</li>
+                                <li>Custom dark/light theme state engine utilizing browser LocalStorage persistence.</li>
+                                <li>Fully fluid dynamic breakpoints supporting desktop, tablet, and mobile browsers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ATS Simulation Section -->
+        <section id="ats-demo" class="ats-demo-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Live Showcase</span>
+                    <h2 class="section-title">Interactive Mini-ATS Checker</h2>
+                    <div class="section-underline"></div>
+                    <p class="section-description-text text-center">
+                        Experience a lightweight, client-side simulation of my <strong>AI Resume ATS Checker</strong>. Paste a job description and click "Analyze Resume" to see a simulated matching algorithm evaluate the current page's developer resume keywords!
+                    </p>
+                </div>
+
+                <div class="ats-card glass-panel reveal">
+                    <div class="ats-grid grid">
+                        <!-- Controls & Input -->
+                        <div class="ats-inputs">
+                            <div class="form-group">
+                                <label for="ats-job-desc"><i class="fa-solid fa-briefcase"></i> Target Job Description / Keywords</label>
+                                <textarea id="ats-job-desc" placeholder="Paste a Job Description here. E.g. 'We need a Java Full Stack Developer with experience in Spring Boot, REST APIs, OOPs, MySQL, and React...'"></textarea>
+                            </div>
+                            <div class="ats-prefilled-buttons">
+                                <span class="prefill-label">Or quick load a prefilled role:</span>
+                                <div class="prefill-btn-group">
+                                    <button class="btn btn-tiny prefill-btn" data-role="java">Java Backend</button>
+                                    <button class="btn btn-tiny prefill-btn" data-role="react">Frontend Developer</button>
+                                    <button class="btn btn-tiny prefill-btn" data-role="fullstack">Full Stack Developer</button>
+                                </div>
+                            </div>
+                            <button id="analyze-btn" class="btn btn-primary btn-block"><i class="fa-solid fa-wand-magic-sparkles"></i> Analyze Resume</button>
+                        </div>
+
+                        <!-- Results Dashboard -->
+                        <div class="ats-results" id="ats-results-panel">
+                            <div class="ats-placeholder-state" id="ats-placeholder">
+                                <i class="fa-solid fa-robot placeholder-icon animate-float"></i>
+                                <h4>Awaiting Input</h4>
+                                <p>Load a target role or paste a job description on the left, then trigger the analyzer to run structural scanning.</p>
+                            </div>
+                            
+                            <div class="ats-active-state hidden" id="ats-report">
+                                <div class="ats-score-circle-wrapper">
+                                    <svg class="progress-ring" width="120" height="120">
+                                        <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.05)" stroke-width="8" fill="transparent" r="50" cx="60" cy="60"/>
+                                        <circle class="progress-ring__circle" id="score-ring" stroke="url(#ats-glow-grad-2)" stroke-width="8" stroke-dasharray="314.16 314.16" stroke-dashoffset="314.16" fill="transparent" r="50" cx="60" cy="60"/>
+                                        <defs>
+                                            <linearGradient id="ats-glow-grad-2" x1="0" y1="0" x2="1" y2="1">
+                                                <stop offset="0%" stop-color="#8b5cf6"/>
+                                                <stop offset="100%" stop-color="#06b6d4"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <div class="ats-score-value">
+                                        <span id="score-number">0</span><span class="pct">%</span>
+                                    </div>
+                                </div>
+                                <div class="score-rating-badge" id="score-rating">Awaiting Scan</div>
+                                
+                                <div class="ats-report-details">
+                                    <div class="report-metric">
+                                        <span>Keyword Matching:</span>
+                                        <span class="metric-val" id="metric-keywords">0%</span>
+                                    </div>
+                                    <div class="report-metric">
+                                        <span>Structure & Layout:</span>
+                                        <span class="metric-val text-success"><i class="fa-solid fa-check"></i> Passed (ATS Optimized)</span>
+                                    </div>
+                                    <div class="report-feedback" id="report-feedback-text">
+                                        Resume contains excellent keywords matching your description.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section id="experience" class="experience-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Professional Path</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="timeline-container reveal">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <div class="timeline-header">
+                                <div class="company-logo-wrapper">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                end-to-end </div>
+                                <div class="timeline-titles">
+                                    <h3>Java Developer Intern</h3>
+                                    <h4 class="company-name">Tap Academy</h4>
+                                </div>
+                                <span class="timeline-date">Jan 2026 - Feb 2026</span>
+                            </div>
+                            <div class="timeline-body">
+                                <ul class="timeline-bullets">
+                                    <li>Acquired advanced fundamentals of <strong>Core Java</strong> and object-oriented architectures.</li>
+                                    <li>Programmed functional CLI applications implementing clean logic and memory modularity.</li>
+                                    <li>Successfully leveraged <strong>JDBC</strong> layers to conduct direct SQL database interactions and CRUD transactions.</li>
+                                    <li>Improved software testing capabilities and structured debugging across Java Collection elements.</li>
+                                    <li>Coordinated with teams inside git-managed repositories to review clean documentation and standard guidelines.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Milestones</span>
+                    <h2 class="section-title">Achievements</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="achievements-grid grid reveal">
+                    <!-- Achievement 1: SIH -->
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-icon-container">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3>Smart India Hackathon (SIH)</h3>
+                        <p>Collaborated in building innovative technical products to resolve pressing social and digital issues on a national scale.</p>
+                    </div>
+
+                    <!-- Achievement 2: Tamil Hackathon -->
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-icon-container">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3>Tamil Hackathon Participation</h3>
+                        <p>Constructed creative technology tools integrating and preserving Tamil culture, language translation, and educational platforms.</p>
+                    </div>
+
+                    <!-- Achievement 3: DSA Solving -->
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-icon-container">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3>250+ DSA Problems Solved</h3>
+                        <p>Consistently developed structured and mathematically optimal problem solving algorithms in Java across key programming sites.</p>
+                    </div>
+
+                    <!-- Achievement 4: Tap Academy Full Stack -->
+                    <div class="achievement-card glass-panel">
+                        <div class="achievement-icon-container">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h3>Java Full Stack Training</h3>
+                        <p>Completed intensive training in end-to-end full stack development, bridging strong backend Java code with beautiful user interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Academic Credentials</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="education-card-wrapper reveal">
+                    <div class="education-card glass-panel">
+                        <div class="edu-card-glow"></div>
+                        <div class="edu-card-content grid">
+                            <div class="edu-icon-side">
+                                <i class="fa-solid fa-school"></i>
+                            </div>
+                            <div class="edu-text-side">
+                                <span class="edu-date">2024 - 2027</span>
+                                <h3>B.Sc. Information Technology</h3>
+                                <h4>KPR College Of Arts Science And Research</h4>
+                                <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
+                                <div class="edu-cgpa-badge">
+                                    <span class="cgpa-label">CGPA</span>
+                                    <span class="cgpa-value">7.9 / 10.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid grid reveal">
+                    <!-- Contact Information Cards -->
+                    <div class="contact-info-panel">
+                        <h3>Let's talk about your projects!</h3>
+                        <p class="contact-intro">I'm currently seeking internships, full-time roles, or exciting side project partnerships. Drop me a line!</p>
+                        
+                        <div class="contact-cards-container">
+                            <a href="mailto:sathishsath2714@gmail.com" class="contact-info-card glass-panel">
+                                <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+                                <div class="contact-card-details">
+                                    <h4>Email Me</h4>
+                                    <span>sathishsath2714@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:9360729692" class="contact-info-card glass-panel">
+                                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-card-details">
+                                    <h4>Call Me</h4>
+                                    <span>+91 9360729692</span>
+                                </div>
+                            </a>
+                            <div class="contact-info-card glass-panel">
+                                <div class="contact-card-icon"><i class="fa-solid fa-map-pin"></i></div>
+                                <div class="contact-card-details">
+                                    <h4>Location</h4>
+                                    <span>Coimbatore, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel glass-panel">
+                        <form id="contact-form" novalidate>
+                            <div class="form-row grid">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe">
+                                    <span class="error-msg">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" required placeholder="john@example.com">
+                                    <span class="error-msg">Please enter a valid email</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" required placeholder="Project Opportunity">
+                                <span class="error-msg">Please enter a subject</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <textarea id="form-message" required placeholder="Hi Sathish, I saw your portfolio and..."></textarea>
+                                <span class="error-msg">Please write a message</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <span>Send Message</span> <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Popup overlay inside form -->
+                        <div class="form-success-overlay hidden" id="form-success">
+                            <div class="success-content text-center">
+                                <div class="success-icon-wrapper">
+                                    <i class="fa-solid fa-circle-check animate-scale"></i>
+                                </div>
+                                <h3>Thank you, John!</h3>
+                                <p>Your message has been parsed successfully. I will get back to you as soon as possible!</p>
+                                <button class="btn btn-secondary btn-small" id="success-close-btn">Send another message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo"><span class="gradient-text">&lt;Sathish.Dev/&gt;</span></a>
+                <p>Delivering robust Full Stack Java microservices and modern frontend software architectures.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul class="footer-nav-list">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Connect Socially</h4>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/sathish24111" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sathish-g-dev" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:sathishsath2714@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Sathish G. All Rights Reserved. Crafted with <i class="fa-solid fa-heart text-danger"></i> using Pure HTML, CSS & JS.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
